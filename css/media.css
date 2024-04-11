@@ -1,0 +1,47 @@
+/* < ------- Media Query ------- > */
+
+@media (max-width: 768px) {
+  #iphone {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #iphone img {
+    width: 70%;
+    margin-top: 20px;
+  }
+
+  header {
+    grid-template-rows: auto;
+    grid-template-columns: 100%;
+  }
+
+  main {
+    height: auto;
+    grid-template-rows: auto;
+    grid-template-columns: 100%;
+    grid-template-areas:
+      "keyboard"
+      "imac"
+      "games"
+      "experience"
+      "icloud";
+  }
+
+  footer {
+    grid-template-rows: auto;
+    grid-template-columns: 100%;
+    grid-template-areas:
+      "twitter"
+      "experience"
+      "vision";
+  }
+  main #imac .item1 img {
+    width: 120%;
+    position: absolute;
+    bottom: 0;
+    right: 34%;
+  }
+}
+
+/* < ------- Media Query ------- > */

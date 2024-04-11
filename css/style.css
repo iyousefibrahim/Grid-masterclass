@@ -1,0 +1,490 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+:root {
+  --Arvo-font: "Arvo", serif;
+  --Montserrat-font: "Montserrat", sans-serif;
+  --Open-sans-font: "Open Sans", sans-serif;
+}
+
+/* Header */
+
+header {
+  width: 100%;
+  display: grid;
+  grid-template-rows: 350px;
+  grid-template-columns: 50% 50%;
+  padding-top: 50px;
+}
+
+#iphone {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#iphone .iphone-text {
+  width: 35%;
+}
+
+#iphone .iphone-text h4 {
+  font-family: var(--Montserrat-font);
+  font-size: 12px;
+  font-weight: 700;
+  color: rgb(159, 163, 167);
+}
+
+#iphone .iphone-text h5 {
+  font-family: var(--Arvo-font);
+  font-size: 22px;
+  color: rgb(51, 51, 51);
+  font-weight: 400;
+  padding: 15px 0;
+  line-height: 32px;
+}
+
+#iphone .iphone-text p {
+  font-family: var(--Open-sans-font);
+  color: rgb(159, 163, 167);
+  font-size: 14px;
+  font-weight: 400;
+}
+
+#iphone img {
+  width: 40%;
+}
+
+#how-to {
+  padding: 20px;
+}
+
+#how-to .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 100%;
+}
+
+#how-to .container p {
+  font-family: var(--Montserrat-font);
+  font-weight: 700;
+  font-size: 12px;
+  color: rgb(159, 163, 167);
+}
+
+#how-to .container h4 {
+  font-family: var(--Arvo-font);
+  font-size: 48px;
+  color: rgb(51, 51, 51);
+  font-weight: 400;
+  text-align: center;
+}
+
+#how-to .container a {
+  font-family: var(--Open-sans-font);
+  font-weight: 400;
+  font-size: 14px;
+  color: rgb(39, 185, 194);
+}
+
+/* Header */
+
+/* Main */
+
+main {
+  height: 130vh;
+  display: grid;
+  grid-template-rows: 50% 50%;
+  grid-template-columns: 25% 50% 25%;
+  grid-template-areas:
+    "keyboard imac icloud"
+    "games experience icloud";
+}
+
+main #keyboard {
+  background-color: #f05638;
+  grid-area: keyboard;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+}
+
+main #keyboard h4 {
+  font-family: var(--Arvo-font);
+  font-size: 22px;
+  font-weight: 700;
+  padding: 15px 0;
+  color: white;
+  text-align: center;
+}
+
+main #keyboard a {
+  text-decoration: none;
+  font-family: var(--Open-sans-font);
+  color: rgb(255, 200, 10);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+main #keyboard a i {
+  margin-left: 3px;
+  font-size: 9px;
+  vertical-align: 1px;
+  display: inline-block;
+}
+
+main #keyboard img {
+  width: 100%;
+}
+
+main #imac {
+  grid-area: imac;
+  display: flex;
+  align-items: center;
+  background-color: white;
+}
+
+main #imac .item1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+  position: relative;
+}
+
+main #imac .item1 .item-content {
+  width: 60%;
+  margin-bottom: 80px;
+}
+
+main #imac .item1 img {
+  width: 130%;
+  position: absolute;
+  bottom: 0;
+  right: 34%;
+}
+
+main #imac .item1 p {
+  letter-spacing: 2px;
+  padding: 15px 0;
+  font-family: var(--Montserrat-font);
+  font-size: 12px;
+  font-weight: 700;
+  color: rgb(159, 163, 167);
+}
+
+main #imac .item1 h3 {
+  font-family: var(--Arvo-font);
+  font-size: 22px;
+  color: rgb(51, 51, 51);
+  font-weight: 400;
+}
+
+main #imac .item2 {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 35px;
+}
+
+main #imac .item2 p {
+  font-family: var(--Open-sans-font);
+  font-size: 14px;
+  color: rgb(159, 163, 167);
+  padding: 20px 0;
+  line-height: 23px;
+}
+
+main #imac .item2 a {
+  text-decoration: none;
+  font-family: var(--Open-sans-font);
+  font-size: 12px;
+  font-weight: 700;
+  color: rgb(39, 185, 194);
+  letter-spacing: 3px;
+}
+
+main #imac .item2 a i {
+  font-size: 8px;
+  vertical-align: 1px;
+  display: inline-block;
+}
+
+main #icloud {
+  background-color: #8f76bc;
+  grid-area: icloud;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  padding: 45px;
+  text-align: center;
+}
+
+main #icloud .circle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #8166b0;
+  border-radius: 50%;
+  width: 373px;
+  height: 373px;
+  justify-content: center;
+}
+
+main #icloud .circle img {
+  width: 65%;
+}
+
+main #icloud .circle p:nth-child(1) {
+  color: white;
+  font-size: 10px;
+  font-weight: 700;
+  font-family: var(--Open-sans-font);
+  border: 2px solid transparent;
+  background-color: #8b72b6;
+  border-radius: 50px;
+  padding: 0 15px;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+}
+
+main #icloud .circle p:nth-child(3) {
+  font-family: var(--Montserrat-font);
+  font-size: 12px;
+  font-weight: 700;
+  color: white;
+  letter-spacing: 2px;
+}
+
+main #icloud .circle p i {
+  color: #ffc80a;
+  margin-right: 5px;
+}
+
+main #icloud h4 {
+  margin: 20px 0;
+  font-family: var(--Arvo-font);
+  font-size: 32px;
+  font-weight: 700;
+  color: white;
+}
+
+main #icloud:nth-child(3) {
+  color: white;
+  font-family: var(--Open-sans-font);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+main #icloud button {
+  cursor: pointer;
+  margin-top: 25px;
+  background-color: #ffc80a;
+  border: 2px solid transparent;
+  border-radius: 25px;
+  padding: 15px 25px;
+  font-family: var(--Open-sans-font);
+  font-size: 12px;
+  font-weight: 700;
+  color: black;
+  letter-spacing: 3px;
+}
+
+main #games {
+  background-color: white;
+  grid-area: games;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main #games img {
+  position: relative;
+  left: -7%;
+  width: 75%;
+}
+
+main #games h3 {
+  font-family: var(--Arvo-font);
+  font-size: 22px;
+  font-weight: 400;
+  color: rgb(51, 51, 51);
+  margin: 10px 0 20px 0;
+}
+
+main #games a {
+  text-decoration: none;
+  font-family: var(--Open-sans-font);
+  color: rgb(39, 185, 194);
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: 2px;
+  margin-top: 20px;
+}
+
+main #games a i {
+  margin-left: 3px;
+  font-size: 9px;
+  vertical-align: 1px;
+  display: inline-block;
+}
+
+main #experience {
+  background-color: #93b6b7;
+  grid-area: experience;
+  background-image: url(../img/5bc2f42d5a5ed97dab707e7e_UX.png);
+  background-position: 50% 100%;
+  background-size: 80%;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+main #experience p {
+  align-self: flex-start;
+  font-family: var(--Open-sans-font);
+  font-size: 8px;
+  font-weight: 700;
+  color: white;
+  background-color: #fa684f;
+  border: 2px solid transparent;
+  padding: 5px 10px;
+  border-radius: 5px;
+  letter-spacing: 2px;
+  margin: 20px 0 0 20px;
+}
+
+main #experience h4 {
+  font-family: var(--Arvo-font);
+  font-size: 22px;
+  font-weight: 700;
+  color: white;
+}
+
+main #experience img {
+  position: relative;
+  left: -10%;
+  width: 90%;
+}
+
+/* Main */
+
+/* Footer */
+
+footer {
+  display: grid;
+  grid-template-rows: 200px;
+  grid-template-columns: 25% 25% auto;
+  grid-template-areas: "twitter experience vision";
+  overflow: hidden;
+}
+
+footer #twitter {
+  background-color: #38d5f4;
+  grid-area: twitter;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer #twitter .circle {
+  background-color: #35cfed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid transparent;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+}
+
+footer #twitter .circle h4 {
+  color: white;
+  font-family: var(--Arvo-font);
+  font-weight: 400;
+  font-size: 22px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+footer #twitter .circle img {
+  width: 25%;
+}
+
+footer #experience {
+  background-color: white;
+  grid-area: experience;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 15px;
+}
+
+footer #experience p {
+  background-color: #7bc424;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  letter-spacing: 2px;
+  padding: 0 10px;
+  color: white;
+  font-family: var(--Open-sans-font);
+  font-size: 8px;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+footer #experience h4 {
+  margin-top: 10px;
+  font-family: var(--Arvo-font);
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 32px;
+  color: rgb(51, 51, 51);
+  text-align: center;
+}
+
+footer #vision {
+  background-color: #2c2c2c;
+  grid-area: vision;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  word-wrap: break-word;
+}
+
+footer #vision h4 {
+  color: white;
+  font-family: var(--Arvo-font);
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 32px;
+  overflow-wrap: break-word;
+  padding: 25px;
+}
+
+footer #vision img {
+  width: 40%;
+}
+/* Footer */
