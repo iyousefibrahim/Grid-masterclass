@@ -1,4 +1,4 @@
-# Assignment-6-Grid-masterclass-
+# Grid-masterclass
 
 
 Grid Masterclass is a showcase webpage demonstrating various sections with detailed content and visuals, optimized for modern web viewing.
